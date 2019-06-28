@@ -14,7 +14,7 @@ https://www.kaggle.com/grassknoted/asl-alphabet
 
 ## Using the code
 
-**The ASL recognition class**
+_**The ASL recognition class**_
 
 To use the ASL recognizer, start by making an instance of the class. If you have the pretrained model downloaded, all you have to run is
 
@@ -29,7 +29,7 @@ If you would like to start with an untrained model instead, run
 This will return a ResNet50 model with randomly initialized weights. 
 
 
-**Training the Model**
+_**Training the Model**_
 
 If you would like to train the model on a new dataset, make sure you **do not** load the pretrained weights, then you can run 
 
@@ -37,7 +37,7 @@ If you would like to train the model on a new dataset, make sure you **do not** 
 
 Make sure the data is organized by letter, as in all images for one sign should be in the same file inside the parent data file.
 
-**Predicting** 
+_**Predicting**_
 
 To predict on a new sign, you can either predict on an existing image of a static sign,
 
@@ -57,7 +57,7 @@ This starts a video frame that waits for a command:
        s: take static image for (a-y) prediction not including J
        d: take recording until d hit again, captures dynamic sign and predicts either J or Z
 
-**Saving a new model**
+_**Saving a new model**_
 
 All you have to do to save a newly trained model is
 
