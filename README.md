@@ -18,15 +18,11 @@ https://www.kaggle.com/grassknoted/asl-alphabet
 
 To use the ASL recognizer, start by making an instance of the class. If you have the pretrained model downloaded, all you have to run is
 
-```
-asl = ASLRecognition()
-```
+```asl = ASLRecognition()```
 
 If you would like to start with an untrained model instead, run
 
-```
-asl = ASLRecognition(load = False)
-```
+```model = ASLRecognition(load = False)```
 
 This will return a ResNet50 model with randomly initialized weights. 
 
@@ -35,9 +31,7 @@ This will return a ResNet50 model with randomly initialized weights.
 
 If you would like to train the model on a new dataset, make sure you **do not** load the pretrained weights, then you can run 
 
-```
-asl.fitCNN("directory_of_new_dataset")
-```
+```model.fitCNN("directory_of_new_dataset")```
 
 Make sure the data is organized by letter, as in all images for one sign should be in the same file inside the parent data file.
 
@@ -45,15 +39,11 @@ Make sure the data is organized by letter, as in all images for one sign should 
 
 To predict on a new sign, you can either predict on an existing image of a static sign,
 
-```
-asl.predict(img_path = "path_of_img")
-```
+```model.predict(img_path = "path_of_img")```
 
 or use your webcam to either take a static or dynamic sign,
 
-```
-asl.predict()
-```
+```model.predict()```
 
 This starts a video frame that waits for a command:
                 
@@ -62,3 +52,7 @@ This starts a video frame that waits for a command:
        d: take recording until d hit again, captures dynamic sign and predicts either J or Z
 
 **Saving a new model**
+
+All you have to do to save a newly trained model is
+
+```model.save()```
