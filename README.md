@@ -31,6 +31,8 @@ model = ASLRecognition(load = False)
 This will return a ResNet50 model with randomly initialized weights. 
 
 
+
+
 _**Training the Model**_
 
 If you would like to train the model on a new dataset, make sure you **do not** load the pretrained weights, then you can run 
@@ -40,6 +42,8 @@ model.fitCNN("directory_of_new_dataset")
 ```
 
 Make sure the data is organized by letter, as in all images for one sign should be in the same file inside the parent data file.
+
+
 
 _**Predicting**_
 
@@ -60,6 +64,8 @@ This starts a video frame that waits for a command:
        Esc: cancel prediction
        s: take static image for (a-y) prediction not including J
        d: take recording until d hit again, captures dynamic sign and predicts either J or Z
+
+
 
 _**Saving a new model**_
 
