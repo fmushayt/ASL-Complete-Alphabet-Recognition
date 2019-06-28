@@ -6,7 +6,7 @@ https://drive.google.com/drive/folders/1rOtbhmVBv6_wRUTcFAjDEoRkN9Muk7VM?usp=sha
 
 ## Using the code
 
-*The ASL recognition class*
+**The ASL recognition class**
 
 To use the ASL recognizer, start by making an instance of the class. If you have the pretrained model downloaded, all you have to run is
 
@@ -16,9 +16,9 @@ asl = ASLRecognition()
 
 If you would like to start with an untrained model instead, run
 
-'''
+```
 asl = ASLRecognition(load = False)
-'''
+```
 
 This will return a ResNet50 model with randomly initialized weights. 
 
