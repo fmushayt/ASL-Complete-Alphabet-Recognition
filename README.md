@@ -10,7 +10,7 @@ https://www.kaggle.com/grassknoted/asl-alphabet
 
 ## Abstract
 
-*Insert Abstract Here*
+An ASL alphabet recognition system that uses a convolutional neural network to recognize static gestures of the alphabet and computer vision to recognize dynamic gestures of the alphabet.
 
 ## Using the code
 
