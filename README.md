@@ -4,6 +4,10 @@ To run with pretrained model data, download the files in the link and place them
 
 https://drive.google.com/drive/folders/1rOtbhmVBv6_wRUTcFAjDEoRkN9Muk7VM?usp=sharing
 
+We obtained the data from the following kaggle site:
+
+https://www.kaggle.com/grassknoted/asl-alphabet
+
 ## Using the code
 
 **The ASL recognition class**
@@ -23,6 +27,15 @@ asl = ASLRecognition(load = False)
 This will return a ResNet50 model with randomly initialized weights. 
 
 
-*Training the Model*
+**Training the Model**
 
+If you would like to train the model on a new dataset, make sure you **do not** load the pretrained weights, then you can run 
+
+```
+asl.fitCNN("directory_of_new_dataset")
+```
+
+Make sure the data is organized by letter, as in all images for one sign should be in the same file inside the parent data file.
+
+**Predicting** 
 
