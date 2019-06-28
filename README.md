@@ -8,6 +8,10 @@ We obtained the data from the following kaggle site:
 
 https://www.kaggle.com/grassknoted/asl-alphabet
 
+## Abstract
+
+*Insert Abstract Here*
+
 ## Using the code
 
 **The ASL recognition class**
@@ -39,3 +43,22 @@ Make sure the data is organized by letter, as in all images for one sign should 
 
 **Predicting** 
 
+To predict on a new sign, you can either predict on an existing image of a static sign,
+
+```
+asl.predict(img_path = "path_of_img")
+```
+
+or use your webcam to either take a static or dynamic sign,
+
+```
+asl.predict()
+```
+
+This starts a video frame that waits for a command:
+                
+       Esc: cancel prediction
+       s: take static image for (a-y) prediction not including J
+       d: take recording until d hit again, captures dynamic sign and predicts either J or Z
+
+**Saving a new model**
