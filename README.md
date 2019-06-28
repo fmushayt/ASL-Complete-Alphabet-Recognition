@@ -35,7 +35,9 @@ _**Training the Model**_
 
 If you would like to train the model on a new dataset, make sure you **do not** load the pretrained weights, then you can run 
 
-```model.fitCNN("directory_of_new_dataset")```
+```
+model.fitCNN("directory_of_new_dataset")
+```
 
 Make sure the data is organized by letter, as in all images for one sign should be in the same file inside the parent data file.
 
@@ -66,3 +68,5 @@ All you have to do to save a newly trained model is
 ```
 model.save()
 ```
+
+This will save two new files, one with the model data (weights, etc.) called **asl_model_new.h5** and another with the metric history data called **asl_history_new.json**
