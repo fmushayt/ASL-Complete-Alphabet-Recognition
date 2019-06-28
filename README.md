@@ -41,11 +41,15 @@ Make sure the data is organized by letter, as in all images for one sign should 
 
 To predict on a new sign, you can either predict on an existing image of a static sign,
 
-```model.predict(img_path = "path_of_img")```
+```
+model.predict(img_path = "path_of_img")
+```
 
 or use your webcam to either take a static or dynamic sign,
 
-```model.predict()```
+```
+model.predict()
+```
 
 This starts a video frame that waits for a command:
                 
@@ -57,4 +61,6 @@ This starts a video frame that waits for a command:
 
 All you have to do to save a newly trained model is
 
-```model.save()```
+```
+model.save()
+```
