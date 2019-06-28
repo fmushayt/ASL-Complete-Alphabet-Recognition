@@ -61,9 +61,9 @@ model.predict()
 
 This starts a video frame that waits for a command:
                 
-       Esc: cancel prediction
-       s: take static image for (a-y) prediction not including J
-       d: take recording until d hit again, captures dynamic sign and predicts either J or Z
+       - Esc: cancel prediction
+       - s: take static image for (a-y) prediction not including J
+       - d: take recording until d hit again, captures dynamic sign and predicts either J or Z
 
 
 
