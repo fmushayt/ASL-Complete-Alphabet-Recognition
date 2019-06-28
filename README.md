@@ -24,7 +24,9 @@ model = ASLRecognition()
 
 If you would like to start with an untrained model instead, run
 
-```model = ASLRecognition(load = False)```
+```
+model = ASLRecognition(load = False)
+```
 
 This will return a ResNet50 model with randomly initialized weights. 
 
